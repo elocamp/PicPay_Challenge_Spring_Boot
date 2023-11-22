@@ -1,4 +1,7 @@
 package com.picpay.repository;
 
-public interface UserRepository {
+import com.picpay.domain.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<User, Long> {
 }
